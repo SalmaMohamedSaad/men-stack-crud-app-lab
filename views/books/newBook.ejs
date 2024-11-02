@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Add New Book</title>
+  </head>
+  <body>
+    <!-- views/fruits/new.ejs -->
+    <div class="index-link-text"><a href="/books/index">Back to Books</a></div>
+
+    <h1>Add New Book!</h1>
+    <form action="/books/create" method="POST">
+      <div class="checkbox-div">
+        <label for="title">Book Title:</label>
+        <input type="text" name="title" id="title" />
+      </div>
+      <div class="checkbox-div">
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" />
+      </div>
+      <div class="checkbox-div">
+        <label for="coverImage">Book Cover Image:</label>
+        <input type="file" name="coverImage" id="coverImage" />
+      </div>
+      <div class="checkbox-div">
+        <label for="numberOfPages">Number Of Pages:</label>
+        <input type="number" name="numberOfPages" id="numberOfPages" />
+      </div>
+      <div class="checkbox-div">
+        <label for="rate">rate:</label>
+        <input type="number" name="rate" id="rate" max="5" min="1" />
+      </div>
+      <div class="checkbox-div">
+        <label for="description">Description:</label>
+        <textarea type="number" name="description" id="description"></textarea>
+      </div>
+      <button type="submit">Add Book</button>
+    </form>
+  </body>
+</html>
